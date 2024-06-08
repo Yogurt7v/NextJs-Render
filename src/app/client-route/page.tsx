@@ -1,11 +1,14 @@
 "use client";
-import { serverSideFunction } from "@/utils/server-utils";
-import ImageSlider from "../components/imageSlider";
+// import ImageSlider from "../components/imageSlider";
+import { clientSideFunction } from "@/utils/client-utils";
 
 export default function ClientRoutePage() {
+  const result = clientSideFunction();
   console.log("client route rendered");
-    return <ImageSlider/>
+  return (
+    <>
+      <h1>{result}</h1>
+      {/* <ImageSlider/> */}
+    </>
+  );
 }
-
-
-

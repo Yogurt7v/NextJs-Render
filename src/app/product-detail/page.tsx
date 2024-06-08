@@ -1,5 +1,5 @@
-import { Product } from "../components/product";
-import { Reviews } from "../components/reviews";
+import { Product } from "../../components/product";
+import { Reviews } from "../../components/reviews";
 import { Suspense } from "react";
 
 export default function ProductPageDetails() {
